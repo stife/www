@@ -3,8 +3,8 @@ session_start();
 /*include "startseite.php";*/
 
 $dsn = 'mysql:host=stife.lima-db.de;dbname=db_430521_1;charset=utf8';
-$username = 'USER430521';
-$password = 'Sch0ed0ene';
+$username = '{db-user}';
+$password = '{password}';
 
 try {
 	$pdo = new PDO($dsn, $username, $password);
@@ -41,16 +41,7 @@ if (!isset($_SESSION['user_id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($user)) {
 	setcookie('email', $user['email'], time() + (86400 * 30), "/"); // 30 Tage gültig
 }
-
-$erlaubte_dateien = [
-	'home.html',
-	'login.html',
-	'about.html',
-	'contact.html'
-];
-
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
