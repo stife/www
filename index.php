@@ -3,8 +3,9 @@ session_start();
 // include "startseite.php"; 
 
 $dsn = 'mysql:host=stife.lima-db.de;dbname=db_430521_1;charset=utf8';
-$username = getenv('DB_USER');  // Using environment variables
-$password = getenv('DB_PASSWORD');  // Using environment variables
+
+$username = '{db-user}';
+$password = '{password}';
 
 try {
     $pdo = new PDO($dsn, $username, $password);
