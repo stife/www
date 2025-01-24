@@ -1,12 +1,12 @@
 {
-    "name": "your-package-name",
+    "name": "www",
     "description": "A brief description of the project.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Author Name",
-            "email": "author@example.com"
+            "name": "Stife Grey",
+            "email": "stife@die-paten.com"
         }
     ],
     "require": {
