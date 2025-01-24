@@ -1,4 +1,14 @@
 {
+    "name": "your-package-name",
+    "description": "A brief description of the project.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@example.com"
+        }
+    ],
     "require": {
         "facebook/graph-sdk": "^5.1",
         "phpmailer/phpmailer": "^6.9",
